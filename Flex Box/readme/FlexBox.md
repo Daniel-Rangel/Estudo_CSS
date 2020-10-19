@@ -15,14 +15,14 @@ Assim que é usado a propriedade display flex, todos os itens dentro do elemento
 
 ### Flex Container.
 
--   __flex-wrap: wrap;__ Não permite que os itens ( elementos filhos ) não fazem fora dos elementos Pai.
+-   __flex-wrap: wrap;__ Não permite que os itens (  elementos filhos ) não fiquem fora dos elemento Pai.
 
 -   __flex: 1;__ Faz com que os itens se ajuste de acordo com o tamanho do elemento pai.
 
 
 ## Exemplos:
 
-Para que entenda melhor o exemplo adicione mais um nome de clase listada abaixo:
+Para que entenda melhor o exemplo, adicione mais um nome de classe listada abaixo:
 
 -   flex
 -   flex-wrap
@@ -87,11 +87,82 @@ HTML
 </section>
 
 ```
+<hr>
 
+## Flex-direction
 
+Flex direction define direção e por padrão vem como **row(linha)**, tambem temos como valor o **column(coluna)**
 
+-	flex-direction: row; (padrão)
+-	flex-direction: column; (opção)
+-	flex-direction: row-reverse; (opção)
+-	flex-direction: column-reverse; (opção)
 
+## Exemplo:
 
+No exemplo substitua a classe *_row_* para umas das opções abaixo.
+
+-	row-reverse
+-	column
+-	column-reverse
+
+### CSS3
+
+```
+.row {
+	flex-direction: row;
+}
+.row-reverse {
+	flex-direction: row-reverse;
+}
+.column {
+	flex-direction: column;
+}
+.column-reverse {
+	flex-direction: column-reverse;
+}
+
+/* Flex Container */
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+/* Flex Item */
+.item {
+	flex: 1;
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+
+```
+
+### HTML
+
+```
+<h1>flex-direction: row;</h1>
+<section class="container row">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+</section>
+```
 
 <hr>
 
