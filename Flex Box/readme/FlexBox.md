@@ -166,6 +166,80 @@ body {
 
 <hr>
 
+## Flex-wrap
+
+Define se o itens do elemento devem quebrar ou não a linha quando chegar no limite definido do elemento.
+
+valores usados:
+
+-	flex-wrap: nowrap; => Valor padrão, não deve quebra a linha.
+-	flex-wrap: wrap; => Quebra de linha ao chegar no limite do elemento.
+-	flex-wrap: wrap-reverse; => Quebra de linha no limite do elemento, de modo reverso.
+
+
+## Exemplos:
+
+Para melhor entendimento adicionar as classes ou substitua a que esta no exemplo junto a classe container:
+
+-	nowrap
+-	wrap
+-	wrap-reverse
+
+### CSS3
+
+```
+.nowrap {
+	flex-wrap: nowrap;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+.wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+
+/* Flex Container */
+.container {
+	max-width: 360px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+/* Flex Item */
+.item {
+	flex: 1;
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+```
+
+### HTML
+
+```
+<h1>flex-wrap: wrap;</h1>
+<section class="container wrap">
+	<div class="item">TesteDoItem1</div>
+	<div class="item">TesteDoItem2</div>
+	<div class="item">TesteDoItem3</div>
+</section>
+```
+
+<hr>
+
 [Guia do README](https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8)
 
 [REFERÊNCIA 1 Flex Box](https://origamid.com/projetos/flexbox-guia-completo/)
