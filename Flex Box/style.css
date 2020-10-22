@@ -1,19 +1,16 @@
-.row {
-	flex-direction: row;
+.nowrap {
+	flex-wrap: nowrap;
 }
-.row-reverse {
-	flex-direction: row-reverse;
+.wrap {
+	flex-wrap: wrap;
 }
-.column {
-	flex-direction: column;
-}
-.column-reverse {
-	flex-direction: column-reverse;
+.wrap-reverse {
+	flex-wrap: wrap-reverse;
 }
 
 /* Flex Container */
 .container {
-	max-width: 400px;
+	max-width: 360px;
 	margin: 0 auto;
 	display: flex;
 	border: 1px solid #ccc;
