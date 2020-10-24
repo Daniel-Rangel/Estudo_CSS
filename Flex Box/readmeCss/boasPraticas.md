@@ -14,5 +14,7 @@ Arquitetura que ajuda a ter regras que permite a reutilização e manuteção do
 
 ## Regras gerais
 
+Não fazer modificação direto no elemento;
+Criar uma classe para os elementos;
 
 
