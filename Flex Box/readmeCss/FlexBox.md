@@ -238,6 +238,43 @@ body {
 </section>
 ```
 
+## flex-flow
+
+O flex-flow é um atalho para as propriedades flex-direction e flex-wrap.
+
+-	flex-flow: row wrap;
+-	flex-flow: column nowrap;
+
+## justify-content
+
+Ajuda a ajustar/alinha os itens no container, se os itens não ocupar o container inteiro.
+
+como existe muitos valores, cabe pesquisar melhor sobre cada um que deseja usar para a situação que está. asim fazendo teste aderindo para o seu caso.
+
+## Align items
+
+>Alinha os itens flex no container de acordo com a direção. A propriedade só funciona se os itens atuais não ocuparem todo o container. Isso significa que ao definir flex: 1; ou algo similar nos itens, a propriedade não terá mais função
+
+>Excelente propriedade para ser usada em casos que você deseja alinhar um item na ponta esquerda e outro na direita, como em um simples header com marca e navegação.
+
+a o efeito muda de acordo com a direção de row para colunm. Ver no exemplo passado para fixa melhor como usar.
+
+## Align-content
+Propriedade que so funciona em caso que existão mais de 1 item dentro do container, e para isso tambem é usado o **flex-wrap**.
+
+Está propriedade so funciona quando existe espaço dentro de container, caso o itens estejam ocupando todo o espaço vocã não vera a diferença.
+
+<br><br>
+# Flex Item
+
+Filhos direto do flex container. um flex container é definido quando usado o **display: flex;**
+
+## flex-grow
+Em resumo, faz com que o elemente fique to tamanho do container, se usado "0" não ira ocupar todo o width, se usado "1" ira ocupar somente um parte dividindo espaço com outros elementos que tiver o mesmo tamanho e recebeu o **flex-grow: 1;**  ou até mesmo o tomanho maior.
+
+## Flex-Basis
+
+OBS: justify-content não funciona com em flex-grow;
 <hr>
 
 [Guia do README](https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8)
