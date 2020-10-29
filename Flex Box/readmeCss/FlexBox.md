@@ -272,9 +272,28 @@ Filhos direto do flex container. um flex container é definido quando usado o **
 ## flex-grow
 Em resumo, faz com que o elemente fique to tamanho do container, se usado "0" não ira ocupar todo o width, se usado "1" ira ocupar somente um parte dividindo espaço com outros elementos que tiver o mesmo tamanho e recebeu o **flex-grow: 1;**  ou até mesmo o tomanho maior.
 
-## Flex-Basis
+>OBS: justify-content não funciona com em flex-grow;
 
-OBS: justify-content não funciona com em flex-grow;
+
+## Flex Shrink
+
+Define a capacidade de redução do tamanho item, com o valor padrão 1
+
+"observe as mudanças no exemplo no site."
+
+## Flex
+
+Atalho para as propriedades flex-grow, flex-shrink e flex-basis.
+
+## Order
+
+Modifica a ordem dos flex itens. Sempre do menor para o maior.
+
+## Align Self
+
+defini o alinhamento específico de um único flex item dentro do nosso container.
+
+
 <hr>
 
 [Guia do README](https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8)
