@@ -39,3 +39,22 @@ Exemplo de uso quando exite mais de um nome.
 Uso simple de identidicação de pai e filho.
 
 
+## Nomeclatura
+
+### *_Block :_*
+
+-   Sem dependencia hierarquica, ele mesmo tem sua propria formatação.
+
+-   Usar somente Class. (sem tag ou ID), o uso de classe faz com que ele poça ser usado em outras tegs.
+
+### *_Element :_*
+
+-   Nome é precedido do Block. sendo identificado com **"__"**, exemplo: form__input.
+
+-   Não colocar forma hierarquica no css3, e sempre fomatar ele indepentende, exemplo: .form__input{}.
+
+### *_Modifier :_*
+
+-   identificado com "--" para adicionar o modifier, exemplo: somente block => form--novo-modificador, com elemente => form__input--novo-modificador.
+
+- nunca colocar um modifier sem ter um precedente.
