@@ -39,7 +39,7 @@ Exemplo de uso quando exite mais de um nome.
 Uso simple de identidicação de pai e filho.
 
 
-## Nomeclatura
+## Nomeclatura (1/2)
 
 ### *_Block :_*
 
@@ -58,3 +58,63 @@ Uso simple de identidicação de pai e filho.
 -   identificado com "--" para adicionar o modifier, exemplo: somente block => form--novo-modificador, com elemente => form__input--novo-modificador.
 
 - nunca colocar um modifier sem ter um precedente.
+
+## Nomenclatura (2/2)
+
+Usar somente a força do css3 quando se tratar de um modifier.
+
+>Para notar a diferença retire "form--small"
+
+*_exemplo:_*
+
+HTML
+```
+<form class="form form--small">
+    <input type="text" class="form_input">
+    <input type="submit" value="Enviar" class="form_submit">
+</form>
+```
+
+CSS3
+```
+.form{
+    background: #ccc;
+    padding: 15px;
+    border: 1px solid #000;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form_input{
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form_submit{
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+}
+
+/* modificadores para  feito em cascata*/
+.form--small{
+    padding: 5px;
+}
+
+.form--small .form_input{
+    padding: 5px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.form--small .form_submit{
+    padding: 5px;
+    font-size: 13px;
+}
+```

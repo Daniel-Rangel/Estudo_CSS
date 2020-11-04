@@ -47,3 +47,45 @@
     display: flex;
 }
 
+/* EXEMPLO */
+
+.form{
+    background: #ccc;
+    padding: 15px;
+    border: 1px solid #000;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form_input{
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form_submit{
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+}
+
+/* modificadores para  feito em cascata*/
+.form--small{
+    padding: 5px;
+}
+
+.form--small .form_input{
+    padding: 5px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.form--small .form_submit{
+    padding: 5px;
+    font-size: 13px;
+}
