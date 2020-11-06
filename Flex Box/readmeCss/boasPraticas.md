@@ -123,3 +123,19 @@ CSS3
 meta tag usada para responsivo.
 ><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
+## Posso criar modificadores globais?
+
+Usando o bem, não é recomendavel fazer modificadores globais. essa estrutura trabalha com modificadores independentes. 
+
+quando se deseja retirar um elemente usando modificadores globais usa-se até 3 tipos de valores para essa ação.
+
+exemplo em css3:
+```
+.button--hidden{
+    display: none; => modo 1
+    visibility: hidden; => modo 2
+    position: absolute; => modo 3
+    left: -99999999;
+}
+```
+
