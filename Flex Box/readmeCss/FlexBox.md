@@ -293,6 +293,9 @@ Modifica a ordem dos flex itens. Sempre do menor para o maior.
 
 defini o alinhamento específico de um único flex item dentro do nosso container.
 
+# Dicas de Pratica:
+
+Usado no image : display: block; e max-width:100%; para que a imagem almente com o determinado tamanho da container principal.
 
 <hr>
 

@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap');
 
-.hiden{
-    display: none;
-    visibility: hidden;
-    position: absolute;
-    left: -99999999;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito", Helvetica, Arial,sans-serif;
+    color: #222;
+}
+
+ul{
+   list-style: none; 
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
 }
