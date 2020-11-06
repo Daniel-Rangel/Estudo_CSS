@@ -297,6 +297,8 @@ defini o alinhamento específico de um único flex item dentro do nosso containe
 
 Usado no image : display: block; e max-width:100%; para que a imagem almente com o determinado tamanho da container principal.
 
+para usar o "em" sera feito um calculo de tamanho da font pela base, a formula é "tamanho_font / base"
+
 <hr>
 
 [Guia do README](https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8)
