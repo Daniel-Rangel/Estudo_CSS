@@ -299,6 +299,22 @@ Usado no image : display: block; e max-width:100%; para que a imagem almente com
 
 para usar o "em" sera feito um calculo de tamanho da font pela base, a formula é "tamanho_font / base"
 
+o uso do **3n+1** com essa esprecao ela sempre vai usar a base de formatação contando 3x apartir de uma posição escolhida, serve para altomatizar cadas formatação de item por coluna.
+
+```
+.qualidade__item:nth-of-type(3n+1) h2::before{
+    background: #ae81ff;
+}
+
+.qualidade__item:nth-of-type(3n+2) h2::before{
+    background: #f9265e;
+}
+
+.qualidade__item:nth-of-type(3n+3) h2::before{
+    background: #66d9eb;
+}
+```
+
 <hr>
 
 [Guia do README](https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8)
